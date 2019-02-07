@@ -120,9 +120,9 @@ public class Animal
      * @returns True if all fields (name, color, weight, height) are equal, false otherwise.
      */
     @Override
-    public boolean equals(Object other)
-    {
-    	  // Return true if the exact same object:
+    public boolean equals(Object other){
+    	
+    	// Return true if the exact same object:
         if (other == this)
         {
             return true;
@@ -139,12 +139,13 @@ public class Animal
         Animal otherAni = (Animal)other;
 
         // Check that all fields match (color, name, weight, height):
-        
-        
-        
-        
-        // TODO: finish this...
-        
-        /* return TODO; */
+        if(otherAni.getColor().equals(this.getColor())
+        	&& otherAni.getName().equals(this.getColor())
+        	&& otherAni.getWeight() == this.weight
+        	&& otherAni.getHeight() == this.height)
+        {
+        	return true;
+        			
+        }
     }
 }
