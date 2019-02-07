@@ -133,12 +133,11 @@ public class Animal
         if (!(other instanceof Animal))
         {
             return false;
-        }
 
         // Cast object to Animal type to compare member variables:
         Animal otherAni = (Animal)other;
         
-        //
+        //Antonio e Mara
         
         // Check that all fields match (color, name, weight, height):
         if(otherAni.getColor().equals(this.getColor())
