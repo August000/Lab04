@@ -6,13 +6,13 @@ OU EMAIL____________: augusto.batista@ou.edu
 
 Tasks:
 1. complete Equipment equals method
-2. XXX
+2. implement testFullConstructorMethod
 
 Estimated Time (minutes):
 1. 15
-2. XXx
+2. 6
 
 Actual Time (minutes):
 1. 24
-2. XXX
+2. 10
 */}
