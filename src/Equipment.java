@@ -121,8 +121,21 @@ public class Equipment
 
         // Cast object to Equipment type to compare member variables:
         Equipment otherEq = (Equipment)other;
-
-        // Check that all fields match (name, count, totalWeight, totalPrice, and description):
+        
+     // Check that all fields match (name, count, totalWeight, totalPrice, and description):
+        if(	otherEq.getName().equals(this.name)
+        	&& otherEq.getCount() == this.count
+            && otherEq.getTotalWeight() == this.totalWeight 
+            && otherEq.getTotalPrice() == this.totalPrice 
+            && otherEq.getDescription().equals(this.description))
+        {
+            return true;
+            			
+        }
+       else{
+            return false;
+       }
+        
       
         // TODO: finish method
     }
