@@ -135,8 +135,6 @@ public class Equipment
        else{
             return false;
        }
-        
-      
-        // TODO: finish method
+
     }
 }
