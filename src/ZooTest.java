@@ -25,7 +25,7 @@ public class ZooTest {
 		
 		Zoo zoo = new Zoo(2);
 		
-		Animal ani = new Animal("Weasel","White",10,5); 
+		Animal ani = new Animal("White","Weasel",10,5); 
 		zoo.addAnimal(ani);
 		
 		Assert.assertEquals(ani, zoo.getAnimals()[0]);
@@ -35,8 +35,8 @@ public class ZooTest {
 	public void totalHeightTest() throws AssertException{
 		
 		Zoo zoo = new Zoo(2);
-		Animal ani1 = new Animal("Weasel","White",10,5);
-		Animal ani2 = new Animal("Tiger","White",200,50);
+		Animal ani1 = new Animal("White","Weasel",10,5);
+		Animal ani2 = new Animal("White","Tiger",200,50);
 		zoo.addAnimal(ani1);
 		zoo.addAnimal(ani2);
 		
@@ -46,8 +46,8 @@ public class ZooTest {
 	public void getAverageWeightDefautTest() throws AssertException {
 		
 		Zoo zoo = new Zoo(3);
-		Animal ani1 = new Animal("Weasel","White",20,5);
-		Animal ani2 = new Animal("Tiger","White",200,50);
+		Animal ani1 = new Animal("White","Weasel",20,5);
+		Animal ani2 = new Animal("White","Tiger",200,50);
 		zoo.addAnimal(ani1);
 		zoo.addAnimal(ani2);
 		
@@ -57,22 +57,15 @@ public class ZooTest {
 	public void getAverageWeightColorTest() throws AssertException {
 		
 		Zoo zoo = new Zoo(4);
-		Animal ani1 = new Animal("Weasel","White",20,5);
-		Animal ani2 = new Animal("Tiger","White",200,50);
-		Animal ani3 = new Animal("Whale","Black",1000,200);
+		Animal ani1 = new Animal("White","Weasel",20,5);
+		Animal ani2 = new Animal("White","Tiger",200,50);
+		Animal ani3 = new Animal("Bleack","Whale",1000,200);
 		zoo.addAnimal(ani1);
 		zoo.addAnimal(ani2);
 		zoo.addAnimal(ani3);
 		
 		Assert.assertEquals(110, zoo.getAverageWeight("white"));
 	}
-	
-
-	
-	
-	
-	
-	
 	
 }
 
